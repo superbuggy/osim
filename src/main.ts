@@ -8,12 +8,14 @@ import App from './App.vue'
 import router from './router'
 import './services/service-worker-client';
 
-import 'bootstrap/scss/bootstrap.scss'
+import './scss/bootstrap-customized.scss'
 import 'bootstrap-icons/font/bootstrap-icons.scss'
+import 'bootstrap/js/index.esm.js'
+// import 'bootstrap/scss/bootstrap.scss'
+// import 'bootstrap-icons/font/bootstrap-icons.scss'
 
 import './assets/main.css'
 
-import 'bootstrap/js/index.esm.js'
 import {InputLabelDirective} from '@/directives/InputLabelDirective.js';
 
 const app = createApp(App)

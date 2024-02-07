@@ -1,20 +1,29 @@
-@import './redhat-brand-colors.scss';
-// Custom.scss
+;// Custom.scss
 // Option B: Include parts of Bootstrap
+@import './redhat-brand-colors.scss';
 
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/mixins";
 
 // 2. Include any default variable overrides here
 @import "./bootstrap-overrides.scss";
 
 // 3. Include remainder of required Bootstrap stylesheets
-@import "../node_modules/bootstrap/scss/variables";
 
-// 4. Include any optional Bootstrap components as you like
-@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+@import "../node_modules/bootstrap/scss/maps";
+
+@import "./bootstrap-overrides-with-utilities.scss";
+
 @import "../node_modules/bootstrap/scss/reboot";
 @import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/root";
 @import "../node_modules/bootstrap/scss/images";
 @import "../node_modules/bootstrap/scss/containers";
 @import "../node_modules/bootstrap/scss/grid";
+
+@import 'bootstrap/scss/bootstrap.scss';
+
+// 4. Include any optional Bootstrap components as you like

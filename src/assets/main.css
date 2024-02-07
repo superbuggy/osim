@@ -32,25 +32,7 @@ img, picture, video, canvas, svg {
 }
 
 /* Red Hat colors */
-:root {
-  --redhat-primary: #cc0000;
-  --redhat-secondary: #cc0000;
-  --redhat-font: "Red Hat Text","RedHatText", sans-serif;
-}
 
-/* Apply Red Hat theme to buttons */
-.btn-primary {
-  background-color: var(--redhat-primary);
-  border-color: var(--redhat-primary);
-  color: #fff;
-  font-family: var(--redhat-font);
-}
-
-.btn-outline-primary {
-  color: var(--redhat-primary);
-  border-color: var(--redhat-primary);
-  font-family: var(--redhat-font);
-}
 
 /* Remove borders from tables */
 .table {
@@ -64,12 +46,6 @@ td {
 table {
   border-collapse: none;
   border-spacing: 0;
-}
-
-
-/* Apply Red Hat font to the entire app */
-body {
-  font-family: var(--redhat-font);
 }
 
 /* override the primary color for accordion component */
@@ -87,15 +63,4 @@ body {
 }
 .accordion-button:not(.collapsed) {
   color: #000 !important;
-}
-.btn-primary:hover,
-.btn-outline-primary:hover,
-.btn-secondary:hover,
-.btn-warning:hover {
-  background-color: #f44336;
-  border-color: #f44336;
-}
-
-.btn-warning:hover {
-  color: #fff;
 }
